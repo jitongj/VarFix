@@ -87,6 +87,7 @@ The `subpop/` directory contains 1 km resolution raster layers defining populati
 - total population from 0-5 years: `zmb_k0_5_2018_1km.tif`
 
 These files should be downloead from worldPop by running `k0_5_pop.r`
+
 ---
 
 
