@@ -88,11 +88,6 @@ The `subpop/` directory contains 1 km resolution raster layers defining populati
 These files should be downloead from worldPop by running `k0_5_pop.r`
 ---
 
-## Figures
-
-The `figures/` directory stores all generated plots and maps produced by the analysis scripts under `codes` with corresponding structure.
-
----
 
 ## Reproducibility Notes
 
