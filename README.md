@@ -1,49 +1,52 @@
 # Variance Fixing for Small Area Estimation with DHS Data
 
-This repository contains code and data for variance fixing and small area estimation (SAE) analyses based on Demographic and Health Survey (DHS)–style data, with a primary application to Zambia. The project focuses on direct estimation, Fay–Herriot–type models, simulation studies, and diagnostic and visualization tools for evaluating estimation performance.
+This repository contains code and data for variance fixing and small area estimation (SAE) analyses based on Demographic and Health Survey (DHS) data, with a primary application to Zambia. 
 
 ---
 
 ## Repository Structure
 
+```text
+
 ├── codes/
-│ ├── dhs/
-│ │ ├── compare_survey.r
-│ │ ├── interval_plot.r
-│ │ ├── map_script.r
-│ │ ├── ranking_map.r
-│ │ ├── summary_illegal.r
-│ │ └── supplement.r
-│ │
-│ ├── k0_5_pop/
-│ │ └── k0_5_pop.r
-│ │
-│ ├── sanity check/
-│ │ └── large_sample.r
-│ │
-│ ├── simulation/
-│ │ └── all_results_Freq_General_plotFix.R
-│ │
-│ ├── directEST_1030_national.R
-│ └── fhModel_1030.R
+│   ├── dhs/
+│   │   ├── compare_survey.r
+│   │   ├── interval_plot.r
+│   │   ├── map_script.r
+│   │   ├── ranking_map.r
+│   │   ├── summary_illegal.r
+│   │   └── supplement.r
+│   │
+│   ├── k0_5_pop/
+│   │   └── k0_5_pop.r
+│   │
+│   ├── sanity_check/
+│   │   └── large_sample.r
+│   │
+│   ├── simulation/
+│   │   └── all_results_Freq_General_plotFix.R
+│   │
+│   ├── directEST_1030_national.R
+│   └── fhModel_1030.R
 │
 ├── data/
-│ └── Zambia/
-│ ├── country_shp_analysis.rds
-│ ├── zmb_frame_ea.rds
-│ ├── zmb_sample_ea.rds
-│ ├── zmb_ppp_2010_1km_Aggregated.rds
-│ ├── zmb_ppp_2018_1km_Aggregated.rds
-│ └── subpop/
-│ ├── zmb_f_0_2018_1km.tif
-│ ├── zmb_f_1_2018_1km.tif
-│ ├── zmb_m_0_2018_1km.tif
-│ ├── zmb_m_1_2018_1km.tif
-│ └── zmb_k0_5_2018_1km.tif
+│   └── Zambia/
+│       ├── country_shp_analysis.rds
+│       ├── zmb_frame_ea.rds
+│       ├── zmb_sample_ea.rds
+│       ├── zmb_ppp_2010_1km_Aggregated.rds
+│       ├── zmb_ppp_2018_1km_Aggregated.rds
+│       └── subpop/
+│           ├── zmb_f_0_2018_1km.tif
+│           ├── zmb_f_1_2018_1km.tif
+│           ├── zmb_m_0_2018_1km.tif
+│           ├── zmb_m_1_2018_1km.tif
+│           └── zmb_k0_5_2018_1km.tif
 │
 ├── figures/
-├── variance fix.Rproj
+├── variance_fix.Rproj
 └── README.md
+```
 
 
 ---
