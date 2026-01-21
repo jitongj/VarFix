@@ -85,6 +85,7 @@ Scripts use DHS survey data for analysis and visualization:
 The `subpop/` directory contains 1 km resolution raster layers defining population subgroups:
 - female and male population from 0-5 years
 - total population from 0-5 years: `zmb_k0_5_2018_1km.tif`
+
 These files should be downloead from worldPop by running `k0_5_pop.r`
 ---
 
