@@ -34,8 +34,6 @@ This repository contains code and data for variance fixing and small area estima
 │       ├── country_shp_analysis.rds
 │       ├── zmb_frame_ea.rds
 │       ├── zmb_sample_ea.rds
-│       ├── zmb_ppp_2010_1km_Aggregated.rds
-│       ├── zmb_ppp_2018_1km_Aggregated.rds
 │       └── subpop/
 │           ├── zmb_f_0_2018_1km.tif
 │           ├── zmb_f_1_2018_1km.tif
@@ -63,7 +61,7 @@ Scripts use DHS survey data for analysis and visualization:
 - `supplement.r`: supplementary summary analyses and figure7-9 in the supplement material
 
 ### `codes/k0_5_pop/`
-- `k0_5_pop.r`: downloading and creating for the under-5 (k0–5) population. **(Please run this first before running the file `supplement.r`)**
+- `k0_5_pop.r`: downloading and creating for the under-5 (k0–5) population from worldPop. **(Please run this first before running the file `supplement.r`)**
 
 ### `codes/sanity check/`
 - `large_sample.r`: large-sample sanity checks.
@@ -79,14 +77,15 @@ Scripts use DHS survey data for analysis and visualization:
 - `country_shp_analysis.rds`: Zambia admin info
 - `zmb_frame_ea.rds`: enumeration area (EA) frame data from DHS Zambia 2018 survey report
 - `zmb_sample_ea.rds`: sampled EA data for survey estimation, from DHS Zambia 2018 survey report
-- `zmb_ppp_2010_1km_Aggregated.rds`: aggregated gridded covariate or population data (2010) from worldPop
-- `zmb_ppp_2018_1km_Aggregated.rds`: aggregated gridded covariate or population data (2018) from worldPop
+<!-- - `zmb_ppp_2010_1km_Aggregated.rds`: aggregated gridded covariate or population data (2010) from worldPop-->
+  <!-- - `zmb_ppp_2018_1km_Aggregated.rds`: aggregated gridded covariate or population data (2018) from worldPop-->
+
 
 ### Subpopulation Raster Layers
 The `subpop/` directory contains 1 km resolution raster layers defining population subgroups:
 - female and male population from 0-5 years
 - total population from 0-5 years: `zmb_k0_5_2018_1km.tif`
-
+These files should be downloead from worldPop by running `k0_5_pop.r`
 ---
 
 ## Figures
