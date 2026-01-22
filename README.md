@@ -41,7 +41,6 @@ This repository contains code and data for variance fixing and small area estima
 │           ├── zmb_m_1_2018_1km.tif
 │           └── zmb_k0_5_2018_1km.tif
 │
-├── figures/
 ├── variance_fix.Rproj
 └── README.md
 ```
