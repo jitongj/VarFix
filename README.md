@@ -73,7 +73,17 @@ Scripts use DHS survey data for analysis and visualization:
 ## Data
 
 ### `data/Zambia/`
-- `country_shp_analysis.rds`: Zambia admin info
+
+- **`country_shp_analysis.rds`**  
+  Zambia administrative boundary file used for analysis. This object contains a list of administrative levels, where each level includes detailed information on the corresponding geographic areas.
+
+  To generate this file, follow the workflow described in the [Stratification-Pipeline repository](https://github.com/jitongj/Stratification-Pipeline). Specifically:
+
+  1. Run `DataProcessing_helper.R`  
+  2. Run `step0_create_info.R`  
+  3. Run `step1_prepare_dat.R`  
+
+  Configure all required parameters according to the instructions provided in the repository README before executing the scripts.
 - `zmb_frame_ea.rds`: enumeration area (EA) frame data from DHS Zambia 2018 survey report
 - `zmb_sample_ea.rds`: sampled EA data for survey estimation, from DHS Zambia 2018 survey report
 <!-- - `zmb_ppp_2010_1km_Aggregated.rds`: aggregated gridded covariate or population data (2010) from worldPop-->
