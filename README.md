@@ -83,11 +83,22 @@ Scripts use DHS survey data for analysis and visualization:
   2. Run `step0_create_info.R`  
   3. Run `step1_prepare_dat.R`  
 
-  Configure all required parameters according to the instructions provided in the repository README before executing the scripts.
-- `zmb_frame_ea.rds`: enumeration area (EA) frame data from DHS Zambia 2018 survey report
-- `zmb_sample_ea.rds`: sampled EA data for survey estimation, from DHS Zambia 2018 survey report
-<!-- - `zmb_ppp_2010_1km_Aggregated.rds`: aggregated gridded covariate or population data (2010) from worldPop-->
-  <!-- - `zmb_ppp_2018_1km_Aggregated.rds`: aggregated gridded covariate or population data (2018) from worldPop-->
+  Make sure to configure all required parameters according to the instructions provided in the repository README before executing the scripts.
+
+- **`zmb_frame_ea.rds`**  
+  Enumeration Area (EA) frame data from the DHS Zambia 2018 survey report.  
+
+  To generate this file, follow the procedures described in Section 6 of the [Stratification-Pipeline repository](https://github.com/jitongj/Stratification-Pipeline).
+
+- **`zmb_sample_ea.rds`**  
+  Sampled EA data used for survey estimation, based on the DHS Zambia 2018 survey report.  
+
+  To generate this file, follow the procedures described in Section 6 of the [Stratification-Pipeline repository](https://github.com/jitongj/Stratification-Pipeline).
+
+<!--
+- `zmb_ppp_2010_1km_Aggregated.rds`: Aggregated gridded covariate or population data (2010) from WorldPop.
+- `zmb_ppp_2018_1km_Aggregated.rds`: Aggregated gridded covariate or population data (2018) from WorldPop.
+-->
 
 
 ### Subpopulation Raster Layers
